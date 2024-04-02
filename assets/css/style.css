@@ -44,10 +44,14 @@ body{
      background: #08435a;
 }
 .logo{
+    position: relative;
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     text-decoration: none;
+}
+.navbar{
+    position: relative;
 }
 .navbar a{
     text-decoration: none;
@@ -97,7 +101,7 @@ section{
     color: transparent;
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: -33 0;
     -webkit-text-stroke: .7px var(--main-color);
     -webkit-background-clip: text;
     animation: hometext 6s linear infinite;
@@ -256,6 +260,7 @@ span{
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
+    animation: spinner 8s linear infinite;
 }
 .about-content{
     text-align: center;
@@ -511,7 +516,13 @@ span{
 .footer-iconTop a:hover i{
     color: var(--main-color);
 }
-
+/* ============================ */
+.logo .animate,
+.navbar .animate,
+.home.show-animate .animate{
+    animation: showRight 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+}
 /* Responsive Design  */
 @media (max-width: 1200px) {
     html{
@@ -582,6 +593,7 @@ span{
         transform: translateX(0);
         transition-delay: .25s;
     }
+    
 }
 @media (max-width: 520px){
     html{
@@ -652,3 +664,13 @@ span{
         opacity: 0;
      }
  }
+ @keyframes  spinner{
+   100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+   } 
+ }
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
