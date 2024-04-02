@@ -151,7 +151,7 @@ section{
 .btn-box .btn:hover{
     color: var(--main-color);
 }
-.btn-box .btns:nth-child(2){
+.btn-box .btn:nth-child(2){
     background: transparent;
     color: var(--main-color);
 }
@@ -170,7 +170,7 @@ section{
     width: 0;
     height: 100%;
     background: var(--bg-color);
-    z-index: 1;
+    z-index: -1;
     transition: .5s;
 }
 .btn-box .btn:hover::before{
