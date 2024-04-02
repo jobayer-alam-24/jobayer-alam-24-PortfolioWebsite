@@ -16,7 +16,9 @@
     --text-color: #ededed;
     --main-color: #00abf0;
 }
-
+.cs-color{
+    color: aqua;
+}
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -31,7 +33,7 @@ body{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: transparent;
+    background: #08435a;
     display: flex;
     justify-content: space-between;
     align-items: center;
