@@ -729,6 +729,10 @@ span{
     .home-content h1{
         font-size: 5rem;
     }
+    .card{
+        height: 320px;
+        width: 310px;
+    }
 }
 /* Animations  */
 @keyframes  hometext {
