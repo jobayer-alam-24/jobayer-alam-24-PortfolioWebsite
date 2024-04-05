@@ -71,7 +71,7 @@ body{
     cursor: pointer;
     display: none;
 }
-section{
+.section{
     min-height: 100vh;
     padding: 10rem 7% 2rem;
 }
@@ -234,6 +234,14 @@ section{
 .container{
     min-height: 100vh;
     width: 100%;
+}
+.service-wrapper{
+    padding: 5% 8%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cards{
     display: grid;
