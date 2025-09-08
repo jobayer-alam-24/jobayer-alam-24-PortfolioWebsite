@@ -29,6 +29,18 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
 }
+let progressBars = document.querySelectorAll('.progress');
+
+progressBars.forEach(bar => {
+    let percent = parseInt(bar.querySelector('h3 span').innerText.replace('%',''));
+    let innerBar = bar.querySelector('.bar span');
+    innerBar.style.width = percent + '%';
+    innerBar.style.transition = 'width 1.5s ease-in-out';
+    innerBar.style.display = 'block';
+    innerBar.style.height = '100%';
+    innerBar.style.backgroundColor = '#00abf0';
+    innerBar.style.borderRadius = '5px';
+});
 
 // toggle menubar 
 let menuIcon = document.querySelector('#menu-icon');
