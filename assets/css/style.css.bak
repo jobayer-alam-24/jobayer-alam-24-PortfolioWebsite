@@ -117,57 +117,6 @@ body{
 .contact-info a:hover {
     color: #024ea2;
 }
-.contact-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 20px 25px;
-  background: #f5f5f5;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #333;
-  width: 280px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-card i {
-  font-size: 2rem;
-}
-
-.contact-text h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.contact-text p {
-  margin: 2px 0 0;
-  font-size: 0.95rem;
-  color: #555;
-}
-
-/* Hover Effects */
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.fb-card { background: #3b5998; color: #fff; }
-.wa-card { background: #25D366; color: #fff; }
-.email-card { background: #DD4B39; color: #fff; }
-
-.contact-card:hover.fb-card { background: #334d84; }
-.contact-card:hover.wa-card { background: #1ebe5a; }
-.contact-card:hover.email-card { background: #c43c2e; }
 
 .contact-info i {
     font-size: 1.3rem;
